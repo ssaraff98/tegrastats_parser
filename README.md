@@ -1,6 +1,6 @@
 # tegrastats_parser
 
-A simple python algorithm to pass Tegrastats data from a log file
+A simple python algorithm to parse Tegrastats data from a log file
 
 Usage
 ```
