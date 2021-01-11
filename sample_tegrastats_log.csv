@@ -1,2 +1,0 @@
-RAM (MB),SWAP (MB),IRAM (KB),CPU (%) / FREQ (MHz),EMC FREQ (%),GR3D FREQ (%),PLL (C),MCPU (C),PMIC (C),Tboard (C),GPU (C),BCPU (C),Thermal (C),Tdiode (C),Current GPU Power Consumption(mW),Average GPU Power Consumption(mW),VDD SYS SOC,VDD 4V0 WIFI,VDD IN,VDD SYS CPU,VDD SYS DDR
-1404,0,"['0%@345', '0%@960', '0%@960', '0%@345', '0%@345', '0%@345']",0,0,35.5,35.5,100,30,32,35.5,34.1,31.5,"('153', '153')","('306', '306')","('0', '0')","('1649', '1649')","('306', '306')","('173', '173')"
