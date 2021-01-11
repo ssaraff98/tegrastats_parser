@@ -5,7 +5,7 @@ import os
 import re
 import subprocess
 
-header = ["Time Stamp (s)",
+header = ["Time Stamp (mS)",
           "RAM Used (MB)", "Maximum RAM Available (MB)",
           "SWAP Used (MB)", "Maximum Swap Available (MB)",
           "CPU (%) / FREQ (MHz)",
