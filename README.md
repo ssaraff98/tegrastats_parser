@@ -16,3 +16,8 @@ To stop running Tegrastats in the background and parse the log file, execute the
 ```
 exit
 ```
+
+To install all dependency libraries, execute the following command
+```
+pip3 install -r requirements.txt
+```
