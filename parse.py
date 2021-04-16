@@ -2,8 +2,6 @@ import csv
 import os
 import re
 
-from icecream import ic #debugging
-
 class Parse:
     def __init__(self, interval, log_file):
         self.interval = int(interval)
