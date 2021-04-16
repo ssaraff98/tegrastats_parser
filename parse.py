@@ -2,6 +2,8 @@ import csv
 import os
 import re
 
+from icecream import ic #debugging
+
 class Parse:
     def __init__(self, interval, log_file):
         self.interval = int(interval)
@@ -90,8 +92,10 @@ class Parse:
 
         if temperatures:
             self.parse_temperatures(lookup_table, temperatures)
-            substring = line[(line.rindex(temperatures[-1][1] + "C ") + len(temperatures[-1][1] + "C ")):]
+            substring = line[(line.rindex(temperatures[-1][1] + "C") + len(temperatures[-1][1] + "C")):]
+
             vdds = re.findall(r'([A-Za-z0-9_]*) ([0-9]*)\/([0-9]*)', substring)
+
         else:
             vdds = re.findall(r'VDD_([A-Za-z0-9_]*) ([0-9]*)\/([0-9]*)', line)
         self.parse_vdds(lookup_table, vdds) if vdds else None
@@ -128,7 +132,7 @@ class Parse:
 
 if __name__ == '__main__':
     interval = 1000
-    log_file = 'sample.txt'
+    log_file = 'output_log.txt'
 
     parser = Parse(interval, log_file)
     parser.parse_file()
