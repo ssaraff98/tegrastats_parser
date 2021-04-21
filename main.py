@@ -1,7 +1,7 @@
 import argparse
 from tegrastats import Tegrastats
 from parse import Parse
-from graph import Graphs
+from graph import Graph
 
 if __name__ == '__main__':
     # Command line argument parser
